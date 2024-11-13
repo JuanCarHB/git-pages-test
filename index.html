@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Horario de Viajes en Bus</title>
+        <style>
+            /* Estilos globales */
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f9;
+                color: #333;
+            }
+    
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 10px;
+                color: #2c3e50;
+            }
+    
+            header {
+                background-color: #b8a70d;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(216, 188, 188, 0);
+            }
+    
+            header p {
+                font-size: 1.2em;
+                color: #ecf0f1;
+            }
+    
+            .container {
+                width: 80%;
+                margin: 40px auto;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 20px;
+            }
+    
+            /* Estilos para cada viaje */
+            .viaje {
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                transition: transform 0.3s ease;
+            }
+    
+            .viaje:hover {
+                transform: scale(1.05);
+            }
+    
+            .viaje img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-bottom: 3px solid #ecf0f1;
+            }
+    
+            .info-viaje {
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+            }
+    
+            .info-viaje h3 {
+                font-size: 1.8em;
+                margin-bottom: 10px;
+                color: #2980b9;
+            }
+    
+            .info-viaje p {
+                font-size: 1em;
+                margin-bottom: 10px;
+                color: #7f8c8d;
+            }
+    
+            .hora {
+                font-weight: bold;
+                color: #16a085;
+            }
+    
+            .boton-comprar {
+                background-color: #27ae60;
+                color: white;
+                padding: 12px 25px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.1em;
+                border-radius: 5px;
+                margin-top: 10px;
+                transition: background-color 0.3s;
+            }
+    
+            .boton-comprar:hover {
+                background-color: #2ecc71;
+            }
+    
+            /* Responsividad */
+            @media (max-width: 768px) {
+                .container {
+                    width: 95%;
+                }
+            }
+    
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <h1>Horario de Viajes en Bus</h1>
+            <p>¡Viaja cómodamente con nosotros!</p>
+        </header>
+    
+        <div class="container">
+            <!-- Viaje 8 AM -->
+            <div class="viaje">
+                <img src="https://t4.ftcdn.net/jpg/05/95/45/81/360_F_595458173_ZpVL2nIqsaSEhc1El5TSRNnMcAegkTOz.jpg" alt="Taxco">
+                <div class="info-viaje">
+                    <h3>Taxco</h3>
+                    <p class="hora">Hora de salida: 8:00 AM</p>
+                    <p>Disfruta de la ciudad de Taxco, famosa por su arquitectura colonial y minas de plata.</p>
+                    <a href="#" class="boton-comprar">Comprar Ticket</a>
+                </div>
+            </div>
+    
+            <!-- Viaje 9 AM -->
+            <div class="viaje">
+                <img src="https://www.liderempresarial.com/wp-content/uploads/2023/03/Lo-mejor-de-Mexico-2023.webp" alt="Querétaro">
+                <div class="info-viaje">
+                    <h3>Querétaro</h3>
+                    <p class="hora">Hora de salida: 9:00 AM</p>
+                    <p>Viaje a Querétaro, una ciudad llena de historia y arquitectura colonial.</p>
+                    <a href="#" class="boton-comprar">Comprar Ticket</a>
+                </div>
+            </div>
+    
+            <!-- Viaje 10 AM -->
+            <div class="viaje">
+                <img src="https://cdn.mexicodestinos.com/lugares/chiapa-de-corzo-chiapas-princ-min.jpg" alt="Tuxtla Gutiérrez">
+                <div class="info-viaje">
+                    <h3>Tuxtla Gutiérrez</h3>
+                    <p class="hora">Hora de salida: 10:00 AM</p>
+                    <p>Un destino único en Chiapas, conocido por sus bellezas naturales y cultura.</p>
+                    <a href="#" class="boton-comprar">Comprar Ticket</a>
+                </div>
+            </div>
+    
+            <!-- Viaje 11 AM -->
+            <div class="viaje">
+                <img src="https://www.uv.mx/sinaman/files/2020/02/grandfiesta-americana-boca.jpg" alt="Boca del Río">
+                <div class="info-viaje">
+                    <h3>Boca del Río</h3>
+                    <p class="hora">Hora de salida: 11:00 AM</p>
+                    <p>Viaja a la costa de Veracruz y disfruta de su gastronomía y paisajes marinos.</p>
+                    <a href="#" class="boton-comprar">Comprar Ticket</a>
+                </div>
+            </div>
+    
+            <!-- Viaje 12 PM -->
+            <div class="viaje">
+                <img src="https://www.outlooktravelmag.com/media/Catedral-de-Guadalajara-jpg.webp" alt="Guadalajara">
+                <div class="info-viaje">
+                    <h3>Guadalajara</h3>
+                    <p class="hora">Hora de salida: 12:00 PM</p>
+                    <p>La cuna del mariachi, tequila y una rica tradición cultural te espera.</p>
+                    <a href="#" class="boton-comprar">Comprar Ticket</a>
+                </div>
+            </div>
+    
+            <!-- Viaje 1 PM -->
+            <div class="viaje">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiP4FVbacJDQYy7eVCGMCBLOjYd6W7LEWhQw&s" alt="Monterrey">
+                <div class="info-viaje">
+                    <h3>Monterrey</h3>
+                    <p class="hora">Hora de salida: 1:00 PM</p>
+                    <p>La capital industrial de México, con montañas impresionantes y una gran vida nocturna.</p>
+                    <a href="#" class="boton-comprar">Comprar Ticket</a>
+                </div>
+            </div>
+    
+            <!-- Viaje 2 PM -->
+            <div class="viaje">
+                <img src="https://i0.wp.com/granturismomexico.com/wp-content/uploads/2017/10/Toluca.jpg?fit=1140%2C768&ssl=1" alt="Toluca">
+                <div class="info-viaje">
+                    <h3>Toluca</h3>
+                    <p class="hora">Hora de salida: 2:00 PM</p>
+                    <p>Viaje a Toluca, famosa por su arquitectura, su gastronomía y el Nevado de Toluca.</p>
+                    <a href="#" class="boton-comprar">Comprar Ticket</a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </body>
+    </html>
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
